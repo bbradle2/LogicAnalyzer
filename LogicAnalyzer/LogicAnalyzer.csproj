@@ -62,7 +62,6 @@
     <Reference Include="CyUSB">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\bin\CyUSB.dll</HintPath>
     </Reference>
-    <Reference Include="FSharp.Core, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="SharpGL, Version=2.4.0.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpGL.2.4.0.0\lib\net40\SharpGL.dll</HintPath>
     </Reference>

@@ -271,7 +271,7 @@ namespace LogicAnalyzer
             StartBtn.BackColor = bRunning ? Color.Red : Color.Green;
         }
 
-        unsafe public void TransferThread()
+        public void TransferThread()
         {
             int xferLen = XFERSIZE;
             
