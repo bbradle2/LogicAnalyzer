@@ -28,8 +28,8 @@ namespace LogicAnalyzer
         }
 
         
-        [DllImport("SpeedCapture.dll", SetLastError = true)]
-        unsafe static extern void CaptureBuffer(byte[] captureBufOut, byte[] inData, int xFerSize, int maxBufferLength, int start);
+        //[DllImport("SpeedCapture.dll", SetLastError = true)]
+        //unsafe static extern void CaptureBuffer(byte[] captureBufOut, byte[] inData, int xFerSize, int maxBufferLength, int start);
 
         const int nSignals = 8;
         CyUSBDevice logicDevice = null;
@@ -56,7 +56,7 @@ namespace LogicAnalyzer
 
         Stopwatch timer;
 
-        byte[] captureBuffer = new byte[MaxCapture];
+        //byte[] captureBuffer = new byte[MaxCapture];
 
         public MainForm()
         {
@@ -76,7 +76,7 @@ namespace LogicAnalyzer
             setDevice();
         }
 
-        unsafe private void InitializeSignals()
+        private void InitializeSignals()
         {
 
             for (int i = 0; i < nSignals; i++)
